@@ -16,6 +16,8 @@ import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CdkTableModule } from '@angular/cdk/table';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MatCardModule,
     FormsModule, ReactiveFormsModule,
-    MatInputModule, MatTableModule, CdkTableModule, MatSelectModule
+    MatInputModule, MatTableModule, CdkTableModule, 
+    MatSelectModule, MatCheckboxModule, MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
