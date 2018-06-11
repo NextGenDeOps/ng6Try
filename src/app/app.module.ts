@@ -8,11 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, 
-          MatIconModule, MatListModule, MatCardModule } from '@angular/material';
+          MatIconModule, MatListModule, MatCardModule, MatInputModule,
+          MatTableModule, MatSelectModule } from '@angular/material';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CdkTableModule } from '@angular/cdk/table';
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -39,7 +42,9 @@ const appRoutes: Routes = [
     MatIconModule,
     MatListModule,
     RouterModule.forRoot(appRoutes),
-    MatCardModule
+    MatCardModule,
+    FormsModule, ReactiveFormsModule,
+    MatInputModule, MatTableModule, CdkTableModule, MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
