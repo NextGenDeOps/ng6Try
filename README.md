@@ -28,7 +28,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 - add --protractor-config e2e/protractor.conf.ie.js for specific config file
 - only update ie driver. Remove other files and update update.json file to remove gecko and chrome entries
-- start stand along selenium webdriver-manager start
+- start stand along selenium webdriver-manager start OR 
+- java -Dwebdriver.ie.driver=node_modules\protractor\node_modules\webdriver-manager\selenium\IEDriverServer3.12.0.exe -jar node_modules\protractor\node_modules\webdriver-manager\selenium\selenium-server-standalone-3.12.0.jar -port 4444
 - use seleniumAddress to point to selenium on started by step above
 
 ## Further help
